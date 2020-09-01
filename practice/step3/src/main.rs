@@ -13,5 +13,21 @@ fn main() {
     let z = 'ℤ';
     let heart_eyed_cat = '😻';  // これ地味にいいね, juliaのやつと一緒か
 
-    
+    // タプル
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+
+    println!("The value of y is {}", y);
+
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+
+    // 配列
+    // 固定長
+    let a = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+
+    // 配列の長さ以上のindexを指定するとパニック
 }
