@@ -1,3 +1,3 @@
 pub mod my_error;
-pub mod entities;
+pub mod entry;
 pub mod render_temp;
