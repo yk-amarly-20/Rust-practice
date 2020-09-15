@@ -1,11 +1,9 @@
 // rendering
-
-extern crate todo;
-use todo::entities;
+use crate::entry::TodoEntry;
 use askama::Template;
 
 #[derive(Template)]
 #[template(path = "index.html")]
-struct IndexTemplate {
-    entries: Vec<entities::TodoEntry>
+pub struct IndexTemplate {
+    pub entries: Vec<TodoEntry>
 }
