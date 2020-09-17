@@ -1,1 +1,1 @@
-docker build -t rust_practice ./dockerfiles/
+docker build -t rust_practice -f ./dockerfiles/Dockerfile .
