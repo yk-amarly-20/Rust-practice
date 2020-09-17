@@ -1,6 +1,9 @@
 FROM rust:latest
 
-ENV USER=yk-amarly-20
-WORKDIR /src
-RUN apt-get update
+RUN mkdir -p /todo
 
+ADD ../practice /todo
+
+WORKDIR /todo
+
+CMD ["/bin/bash"]
